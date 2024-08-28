@@ -1,8 +1,8 @@
 <?php
-$nombre_completo ="Alejandro blas"
-$edad "29"
-$correo "blas1294@gmail.com"
-$telefono "68293432"
+$nombre_completo = "Alejandro blas";
+$edad = 29;
+$correo = "ablas1294@gmail.com";
+$telefono = "6829-3432";
 // Definición de constante
 define("OCUPACION", "Estudiante");
 
