@@ -9,7 +9,7 @@ print_r($frutas);
 
 // Ejercicio: Crea una variable con una lista de tus 5 películas favoritas separadas por guiones (-)
 // y usa explode() para convertirla en un array
-$misPeliculas = ""; // Reemplaza esto con tu lista de películas
+$misPeliculas = "blade,cazadores de vampiro,vanhelsing,conde dracula,bolt"; // Reemplaza esto con tu lista de películas
 $arrayPeliculas = explode("-", $misPeliculas);
 
 echo "</br>Mis películas favoritas:</br>";
