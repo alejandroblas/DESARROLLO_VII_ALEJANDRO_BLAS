@@ -21,7 +21,7 @@ echo "División entera (intdiv): " . intdiv($a, $b) . "<br>";
 
 // Incremento y decremento
 $c = 5;
-echo "Valor original de c: $c<br>";
+echo "Valor original c: $c<br>";
 echo "Post-incremento (c++): " . $c++ . "<br>";
 echo "Valor de c después del post-incremento: $c<br>";
 echo "Pre-incremento (++c): " . ++$c . "<br>";
