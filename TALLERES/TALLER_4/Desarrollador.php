@@ -2,7 +2,7 @@
 require_once 'Empleado.php';
 require_once 'evaluo.php';
 
-class Desarrollador extends Empleado {
+class Desarrollador extends Empleado implements evaluo {
     private $tipo_lenguaje;
     private $nivelExperiencia;
 
@@ -14,7 +14,7 @@ class Desarrollador extends Empleado {
 
     // Getters y Setters
     public function getLenguajeProgramacion() {
-        return $this->lenguajeProgramacion;
+        return $this->tipo_lenguaje;
     }
 
     public function setLenguajeProgramacion($tipo_lenguaje) {
@@ -33,7 +33,7 @@ class Desarrollador extends Empleado {
     public function evaluarDesempenio() {
         // Ejemplo simple: Incremento del salario base por nivel de experiencia
         $factorExperiencia = $this->nivelExperiencia * 100;
-        return $this->salarioBase + $factorExperiencia;
+        return $this->Salario_base + $factorExperiencia;
     }
 }
 ?>
