@@ -1,9 +1,9 @@
 <?php
 
 class Empleado {
-    private $Nombre;
-    private $ID_empleado;
-    private $Salario_base;
+    public $Nombre;
+    public $ID_empleado;
+    public $Salario_base;
 
 
     public function __construct($Nombre, $ID_empleado, $Salario_base) {
