@@ -2,7 +2,7 @@
 require_once 'Empleado.php';
 require_once 'evaluo.php';
 
-class Gerente extends Empleado {
+class Gerente extends Empleado implements evaluo{
     private $departamentos;
     private $bono;
 
@@ -37,7 +37,7 @@ class Gerente extends Empleado {
     // Implementación del método de la interfaz Evaluable
     public function evaluarDesempenio() {
         // Ejemplo simple: Bono del 10% del salario base
-        return $this->Salariobase * 0.10 + $this->bono;
+        return $this->Salario_base * 0.10 + $this->bono;
     }
 }
 ?>
