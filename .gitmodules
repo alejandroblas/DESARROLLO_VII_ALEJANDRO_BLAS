@@ -1,0 +1,6 @@
+[submodule "DESARROLLO_VII_PROYECTO"]
+	path = DESARROLLO_VII_PROYECTO
+	url = https://github.com/Wostberg/DESARROLLO_VII_PROYECTO.git
+[submodule "PROYECTO"]
+	path = PROYECTO
+	url = https://github.com/Wostberg/DESARROLLO_VII_PROYECTO.git
