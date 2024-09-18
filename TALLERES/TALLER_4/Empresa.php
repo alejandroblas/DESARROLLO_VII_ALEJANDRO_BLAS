@@ -60,7 +60,7 @@ class Empresa {
         }
 
         foreach ($departamentos as $departamento => $empleados) {
-            echo "<h3>Departamento: $departamento</h3>";
+            echo "<h3>Departamento: $departav  mento</h3>";
             foreach ($empleados as $empleado) {
                 echo "Nombre: " . $empleado->getNombre() . ", ID: " . $empleado->getId_empleado() . ", Salario: " . $empleado->getSalario_base() . "<br>";
             }
