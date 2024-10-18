@@ -1,18 +1,33 @@
 <?php
+
 function validarNombre($nombre) {
     return !empty($nombre) && strlen($nombre) <= 50;
 }
 
 function validarEmail($email) {
-    return filter_var($email, FILTER_VALIDATE_EMAIL);
+    return filter_var($email, FILTER_VALIDATE_EMAIL) !== false;
 }
 
 function validarEdad($edad) {
     return is_numeric($edad) && $edad >= 18 && $edad <= 120;
 }
 
-function validarSitioWeb($sitioWeb) {
-    return empty($sitioWeb) || filter_var($sitioWeb, FILTER_VALIDATE_URL);
+function calcularEdad($fechaNacimiento) {
+    $fecha = DateTime::createFromFormat('Y-m-d', $fechaNacimiento);
+    if ($fecha) {
+        $hoy = new DateTime();
+        return $hoy->diff($fecha)->y;
+    }
+    return false;
+}
+
+function validarFechaNacimiento($fechaNacimiento) {
+    $fecha = DateTime::createFromFormat('Y-m-d', $fechaNacimiento);
+    return $fecha && $fecha->format('Y-m-d') === $fechaNacimiento;
+}
+
+function validarSitio_Web($sitio_Web) {
+    return empty($sitio_Web) || filter_var($sitio_Web, FILTER_VALIDATE_URL) !== false;
 }
 
 function validarGenero($genero) {
@@ -47,4 +62,5 @@ function validarFotoPerfil($archivo) {
 
     return true;
 }
+
 ?>
