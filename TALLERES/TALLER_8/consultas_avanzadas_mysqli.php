@@ -46,7 +46,7 @@ $sql = "SELECT u.nombre, COUNT(p.id) as num_publicaciones
         LIMIT 1";
 
 $result = mysqli_query($conn, $sql);
-
+/*
 if ($result) {
     $row = mysqli_fetch_assoc($result);
     echo "<h3>Usuario con más publicaciones:</h3>";
@@ -54,6 +54,9 @@ if ($result) {
     mysqli_free_result($result);
 } else {
     echo "Error: " . mysqli_error($conn);
+}*/
+if (!$result) {
+    throw new Exception("Error en la consulta: " . mysqli_error($conn));
 }
 
 mysqli_close($conn);
