@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Platos de Entradas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .entry {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin: 10px;
+            padding: 20px;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .entry:hover {
+            transform: translateY(-5px);
+        }
+
+        .entry h3 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+
+        .entry p {
+            color: #555;
+            font-size: 14px;
+        }
+
+        .entry img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Platos de Entradas</h1>
+        <p>Deliciosas opciones para comenzar tu comida</p>
+    </header>
+
+    <div class="container">
+        <!-- Primer plato -->
+        <div class="entry">
+            <img src="https://via.placeholder.com/250x150?text=Entrante+1" alt="Entrante 1">
+            <h3>Ensalada Caprese</h3>
+            <p>Una fresca ensalada de tomate, mozzarella, albahaca, aceite de oliva y vinagre balsámico.</p>
+        </div>
+
+        <!-- Segundo plato -->
+        <div class="entry">
+            <img src="https://via.placeholder.com/250x150?text=Entrante+2" alt="Entrante 2">
+            <h3>Croquetas de Jamón</h3>
+            <p>Crocantes croquetas rellenas de jamón serrano y bechamel casera, perfectas para picar.</p>
+        </div>
+
+        <!-- Tercer plato -->
+        <div class="entry">
+            <img src="https://via.placeholder.com/250x150?text=Entrante+3" alt="Entrante 3">
+            <h3>Bruschetta al Tomate</h3>
+            <p>Deliciosas rebanadas de pan tostado con tomate fresco, albahaca y un toque de ajo.</p>
+        </div>
+
+        <!-- Cuarto plato -->
+        <div class="entry">
+            <img src="https://via.placeholder.com/250x150?text=Entrante+4" alt="Entrante 4">
+            <h3>Gambas al Ajillo</h3>
+            <p>Un plato sabroso de gambas salteadas con ajo, guindilla y aceite de oliva virgen extra.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Deliciosas Entradas. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
