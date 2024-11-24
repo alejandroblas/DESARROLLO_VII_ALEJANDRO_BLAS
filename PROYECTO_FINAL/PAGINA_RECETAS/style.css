@@ -1,0 +1,176 @@
+*   {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgba(216, 186, 182, 0.763);
+    color: rgb(16, 4, 9);
+    font-family: 'Bitter', serif; 
+}
+.contenedor{
+    width: 110%;
+    max-width: 1400px;
+    margin: 20px auto;
+    display: grid; 
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+
+}
+.contenedor .header {
+    background-color: rgb(223, 245, 220);
+    color: black;
+    grid-column-start:1;
+    grid-column-end: 4;
+    list-style: none;
+    padding: 0;
+    width: 90%;
+    max-width: 1000px;
+}
+
+.menu li a{
+    text-decoration: none;
+    color:rgb(255, 80, 133);
+    padding: 20px;
+    display: block;
+}
+
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li a:hover{
+    background: #ef8354;
+}
+
+.contenedor .Contenido {
+    grid-column: span 2;
+}
+
+
+.contenedor .widget-1,
+.contenedor .widget-2 {
+    background-color: deeppink;
+    color: aliceblue;
+    height: 200px;
+    text-align: left;
+    display: flex;
+    align-items: left;
+    justify-content: right;
+    margin: 30px;
+    margin:50px
+    
+
+}
+.contenedor .footer {
+    background-color: rgb(223, 245, 220);
+    color:black;
+    grid-column: span 3;
+    height: 200px;
+    padding: 10px;
+}
+
+.redes{
+    text-align:left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}   
+
+.redes li{
+    display: inline-block;
+    
+    
+   
+}   
+
+.redes a{
+    padding: 10px;
+
+}
+
+
+
+@media screen and (max-width: 576px) {
+    .contenedor .contenido {
+        grid-column: 1 / -1;
+    }
+
+    .contenedor .sidebar {
+        grid-column: 1 / -1;
+    }
+
+    .contenedor .widget-1 {
+        grid-column: span 2;
+    }
+}
+
+body{
+    background-image: url("https://www.diariodesevilla.es/2022/06/28/con_cuchillo_y_tenedor/recetas/Receta-pudding-verduras-quinoa-roja_1696940600_161506368_667x375.jpg");
+    background-size: cover;
+    background-position: bottom center;
+    
+}
+
+
+.form__container {
+    width: 100%;
+    display: grid;
+    gap: 1em;
+    grid-auto-columns:100%;
+
+}
+
+.form__title{
+    text-align: center;
+    font-size: 1.9rem;
+    margin-bottom: .4em;
+}
+
+.form__input{
+    font-family: inherit;
+    font-size: 1rem;
+    padding: .8em 1em;
+    outline: none;
+    border: none;
+    border: 1px solid #190d08;
+    border-radius: 0.2em;
+}
+.form__input--message{
+    resize: none;
+    padding: 1.8em 1em;
+    margin-bottom: .5em;
+}
+.form__cta{
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: rgb(80, 255, 92);
+    color: rgb(233, 245, 220);
+    border: none;
+    font-weight: 300;
+    padding: .7em 0;
+    border-radius: .2em;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.container .card .imgBx {
+
+    width: 7px;
+    height: 5px;
+}
+
+button{
+    background-color: rgb(255, 208, 80);
+    color: white;
+    padding: 14px 25px;
+    border-radius: 8px;
+    border: 0px;
+    cursor: pointer;
+}
+
+button:active{
+    background-color: lightcoral;
+}

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas Semanales</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .recipe {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            width: 250px;
+            margin: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .recipe h2 {
+            color: #333;
+            font-size: 1.5em;
+        }
+        .ingredients ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .ingredients li {
+            margin: 5px 0;
+        }
+        .recipe p {
+            color: #666;
+        }
+        .preparation {
+            margin-top: 10px;
+            font-style: italic;
+        }
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        img {
+            width: 100%; /* Asegura que las imágenes ocupen todo el ancho del contenedor */
+            height: auto; /* Mantiene la proporción de la imagen */
+            border-radius: 5px;
+            object-fit: cover; /* Asegura que las imágenes cubran el área sin distorsionarse */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Recetas Semanales</h1>
+    <a href="index.html" class="btn-regreso">Regresar a la Pantalla Principal</a>
+
+</header>
+
+<div class="container">
+    <div class="recipe">
+        <h2>Lunes: Ensalada César</h2>
+        <img src="img/ensalada cesar.jpg" alt="Ensalada César">
+        <p>Una ensalada fresca y deliciosa para empezar la semana.</p>
+        <div class="ingredients">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>Lechuga romana</li>
+                <li>Pollo a la parrilla</li>
+                <li>Croutons</li>
+                <li>Aderezo César</li>
+                <li>Queso parmesano</li>
+            </ul>
+        </div>
+        <div class="preparation">
+            <h3>Preparación:</h3>
+            <p>Corta la lechuga en trozos y ponla en un tazón grande. Añade el pollo a la parrilla en trozos, los croutons y el queso parmesano. Vierte el aderezo César y mezcla bien. Sirve y disfruta.</p>
+        </div>
+    </div>
+
+    <div class="recipe">
+        <h2>Martes: Filete de Res a la Parrilla con Verduras</h2>
+        <img src="img/Filetederes.jpg" alt="Filete de Res a la Parrilla">
+        <p>Un filete de res jugoso y sabroso, acompañado de verduras asadas.</p>
+        <div class="ingredients">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>Filetes de res (150g cada uno)</li>
+                <li>Pimientos rojos</li>
+                <li>Calabacines</li>
+                <li>Ajo en polvo</li>
+                <li>Pimienta negra</li>
+                <li>Sal al gusto</li>
+                <li>Aceite de oliva</li>
+                <li>Romero fresco</li>
+            </ul>
+        </div>
+        <div class="preparation">
+            <h3>Preparación:</h3>
+            <p>Condimenta los filetes de res con sal, pimienta y ajo en polvo. Asa los filetes en una parrilla o sartén a fuego alto durante 3-4 minutos por cada lado, o hasta el punto de cocción deseado. Mientras tanto, corta las verduras en tiras y saltéalas en una sartén con aceite de oliva y romero fresco. Sirve el filete acompañado de las verduras asadas.</p>
+        </div>
+    </div>
+
+    <div class="recipe">
+        <h2>Miércoles: Tacos de Pollo</h2>
+        <img src="img/tacos.jpg" alt="Tacos de Pollo">
+        <p>Un plato mexicano con un toque picante y sabroso.</p>
+        <div class="ingredients">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>Pechuga de pollo</li>
+                <li>Tortillas de maíz</li>
+                <li>Aguacate</li>
+                <li>Cebolla morada</li>
+                <li>Salsa picante</li>
+                <li>Cilantro</li>
+            </ul>
+        </div>
+        <div class="preparation">
+            <h3>Preparación:</h3>
+            <p>Corta la pechuga de pollo en tiras y cocínalas en una sartén con un poco de aceite hasta que estén doradas. Calienta las tortillas de maíz y arma los tacos con el pollo, aguacate, cebolla morada, cilantro y salsa picante.</p>
+        </div>
+    </div>
+
+    <div class="recipe">
+        <h2>Jueves: Curry de Garbanzos</h2>
+        <img src="img/garvanzo.jpg" alt="Curry de Garbanzos">
+        <p>Un curry vegetariano con especias exóticas y delicioso sabor.</p>
+        <div class="ingredients">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>Garbanzos cocidos</li>
+                <li>Cebolla</li>
+                <li>Ajo</li>
+                <li>Curry en polvo</li>
+                <li>Coco rallado</li>
+                <li>Espinacas</li>
+            </ul>
+        </div>
+        <div class="preparation">
+            <h3>Preparación:</h3>
+            <p>Sofríe la cebolla y el ajo hasta que estén dorados, luego agrega el curry en polvo. Añade los garbanzos cocidos y un poco de agua, y deja cocinar a fuego lento. Incorpora el coco rallado y las espinacas, cocina por unos minutos más y sirve caliente.</p>
+        </div>
+    </div>
+
+    <div class="recipe">
+        <h2>Viernes: Paella de Mariscos</h2>
+        <img src="img/paella.jpg" alt="Paella de Mariscos">
+        <p>Una paella con mariscos frescos, ideal para el fin de semana.</p>
+        <div class="ingredients">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>Arroz</li>
+                <li>Mariscos (calamares, camarones, mejillones)</li>
+                <li>Pimiento rojo</li>
+                <li>Tomates</li>
+                <li>Ajo</li>
+                <li>Aceite de oliva</li>
+            </ul>
+        </div>
+        <div class="preparation">
+            <h3>Preparación:</h3>
+            <p>En una paellera, sofríe el ajo y el pimiento. Agrega los tomates picados y luego el arroz. Añade caldo de mariscos y los mariscos. Cocina a fuego medio hasta que el arroz esté listo. Sirve caliente y disfruta.</p>
+        </div>
+    </div>
+
+    <div class="recipe">
+        <h2>Sabado: Arroz con Carne Guisada</h2>
+        <img src="img/carne-guisada.jpg" alt="Arroz con Carne Guisada">
+        <p>Un plato lleno de sabor y tradición, con arroz esponjoso y carne guisada en una deliciosa salsa.</p>
+        <div class="ingredients">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>500g de carne guisada (de res o cerdo)</li>
+                <li>1 Cebolla mediana, picada</li>
+                <li>2 Dientes de ajo, picados</li>
+                <li>1 Tomate maduro, picado</li>
+                <li>1 Pimiento verde, picado</li>
+                <li>2 Tazas de arroz</li>
+                <li>4 Tazas de caldo de carne o agua</li>
+                <li>1 Hoja de laurel</li>
+                <li>1/2 Taza de guisantes verdes (opcional)</li>
+                <li>1 Zanahoria, pelada y cortada en cubos pequeños</li>
+                <li>Aceite de oliva o vegetal</li>
+                <li>Sal y pimienta al gusto</li>
+            </ul>
+        </div>
+        <div class="preparation">
+            <h3>Preparación:</h3>
+            <p>1. En una sartén grande o cazuela, calienta un poco de aceite y sofríe la cebolla, el ajo, el pimiento verde y el tomate hasta que estén bien cocidos y fragantes.</p>
+            <p>2. Agrega la carne guisada y cocina por unos minutos hasta que se dore un poco. Añade la zanahoria, el laurel, sal y pimienta al gusto. Remueve bien.</p>
+            <p>3. Incorpora el caldo de carne (o agua) y lleva la mezcla a ebullición. Reduce el fuego y cocina a fuego lento durante unos 20-25 minutos para que la carne se ablande y los sabores se mezclen.</p>
+            <p>4. En otra olla, cocina el arroz con agua y sal (siguiendo las instrucciones del paquete). Cuando esté listo, agrega el arroz cocido a la sartén con la carne guisada y mezcla bien para que se integren todos los sabores.</p>
+            <p>5. Si lo deseas, agrega guisantes verdes o más verduras a la mezcla y cocina por unos minutos más. Sirve caliente.</p>
+        </div>
+    </div>
+    <div class="recipe">
+        <h2>Domingo: Pollo en Salsa de Mostaza y Miel</h2>
+        <img src="img/pollo.jpg" alt="Pollo en Salsa de Mostaza y Miel">
+        <p>Un delicioso plato de pollo con una salsa dulce y picante a base de mostaza y miel.</p>
+        <div class="ingredients">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>4 Pechugas de pollo</li>
+                <li>2 Cucharadas de mostaza Dijon</li>
+                <li>2 Cucharadas de miel</li>
+                <li>1 Cucharada de vinagre balsámico</li>
+                <li>1 Cucharadita de ajo en polvo</li>
+                <li>Sal y pimienta al gusto</li>
+                <li>Aceite de oliva</li>
+            </ul>
+        </div>
+        <div class="preparation">
+            <h3>Preparación:</h3>
+            <p>En un tazón pequeño, mezcla la mostaza, miel, vinagre balsámico, ajo en polvo, sal y pimienta. En una sartén grande, calienta un poco de aceite de oliva y cocina las pechugas de pollo a fuego medio-alto durante 5-6 minutos por cada lado, o hasta que estén bien cocidas. Vierte la salsa de mostaza y miel sobre el pollo y cocina a fuego lento durante 3-4 minutos, hasta que la salsa espese. Sirve caliente, acompañando con arroz o ensalada.</p>
+        </div>
+    </div>
+    <div class="recipe">
+        <h2>Filete de Pescado Frito con Patacones o Yuca</h2>
+        <img src="img/pescado frito.jpg" alt="Filete de Pescado Frito con Patacones">
+        <p>Un delicioso filete de pescado frito acompañado de patacones crujientes o yuca frita. ¡El plato perfecto para una comida completa!</p>
+        <div class="ingredients">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>4 Filetes de pescado blanco (tilapia, mero, o el pescado de tu preferencia)</li>
+                <li>1 Limón</li>
+                <li>2 Dientes de ajo picados</li>
+                <li>Sal y pimienta al gusto</li>
+                <li>Harina de trigo (para empanizar)</li>
+                <li>Aceite vegetal (para freír)</li>
+                <li>2 Plátanos verdes (para los patacones) o 500g de yuca (para la yuca frita)</li>
+                <li>Sal al gusto</li>
+                <li>Aceite vegetal (para freír los patacones o la yuca)</li>
+            </ul>
+        </div>
+        <div class="preparation">
+            <h3>Preparación:</h3>
+            <h4>Para el Filete de Pescado Frito:</h4>
+            <p>1. Exprime el jugo de limón sobre los filetes de pescado y sazónalos con sal, pimienta y el ajo picado. Deja marinar durante 10-15 minutos para que el pescado tome sabor.</p>
+            <p>2. En un plato, coloca una capa de harina de trigo. Pasa cada filete de pescado por la harina, cubriéndolo bien por ambos lados.</p>
+            <p>3. En una sartén grande, calienta el aceite a fuego medio-alto. Cuando esté bien caliente, coloca los filetes de pescado y fríelos durante 3-4 minutos por cada lado, o hasta que estén dorados y crujientes. Retira del aceite y coloca sobre papel absorbente para eliminar el exceso de grasa.</p>
+    
+            <h4>Para los Patacones (Tostones):</h4>
+            <p>1. Pela los plátanos verdes y córtalos en rodajas de aproximadamente 2-3 cm de grosor.</p>
+            <p>2. En una sartén grande, calienta suficiente aceite para freír. Fría las rodajas de plátano durante 2-3 minutos por cada lado, hasta que estén doradas pero no completamente cocidas.</p>
+            <p>3. Retira las rodajas de plátano y colócalas en una tabla. Con la ayuda de un plato o un utensilio plano, aplánalas para darles forma de "tostón".</p>
+            <p>4. Vuelve a colocar los patacones en la sartén y fríelos por 1-2 minutos más hasta que estén crujientes. Sazona con sal al gusto.</p>
+    
+            <h4>Para la Yuca Frita (si prefieres yuca en lugar de patacones):</h4>
+            <p>1. Pela la yuca y córtala en trozos grandes.</p>
+            <p>2. Cocina la yuca en agua con sal durante 20-25 minutos o hasta que esté suave y cocida.</p>
+            <p>3. Luego, en una sartén con aceite caliente, fríe la yuca durante 3-4 minutos hasta que esté dorada y crujiente. Sazona con sal al gusto.</p>
+    
+            <h4>Montaje del Plato:</h4>
+            <p>Coloca los filetes de pescado frito en un plato grande. Acompáñalos con los patacones crujientes o la yuca frita. Puedes servirlos con una rodaja de limón y una salsa tártara o salsa de ajo para acompañar.</p>
+        </div>
+    </div>
+</div>
+
+
+<footer>
+    <p>&copy; 2024 Recetas Semanales | Todos los derechos reservados</p>
+</footer>
+
+</body>
+</html>
